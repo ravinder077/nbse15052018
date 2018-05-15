@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">NBSE</string>
+    <string name="courses">Courses</string>
+    <string name="result">Result</string>
+    <string name="datesheet">Date Sheet</string>
+    <string name="textbook">Text Book</string>
+    <string name="prospectus">Prospectus</string>
+    <string name="form">Form</string>
+    <string name="enquiry">Enquiry</string>
+    <string name="about_us">About Us</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="secondary">Secondary</string>
+    <string name="senior_secondary">Senior Secondary</string>
+    <string name="Diploma">Diploma</string>
+    <string name="sub_code">Subject Code</string>
+    <string name="sub_name">Subject Name</string>
+    <string name="code">Code</string>
+    <string name="rollno">Roll No.</string>
+    <string name="dob">Date of Birth</string>
+    <string name="submit">Submit</string>
+</resources>
