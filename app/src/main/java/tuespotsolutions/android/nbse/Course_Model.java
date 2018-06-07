@@ -2,11 +2,12 @@ package tuespotsolutions.android.nbse;
 
 public class Course_Model {
 
-    String sub_code,sub;
+    String sub_code,sub,stream;
 
-    public Course_Model(String sub_code, String sub) {
+    public Course_Model(String sub_code, String sub, String stream) {
         this.sub_code = sub_code;
         this.sub = sub;
+        this.stream= stream;
     }
 
     public Course_Model() {
@@ -20,6 +21,7 @@ public class Course_Model {
         this.sub_code = sub_code;
     }
 
+
     public String getSub() {
         return sub;
     }
@@ -27,4 +29,13 @@ public class Course_Model {
     public void setSub(String sub) {
         this.sub = sub;
     }
+
+    public String getStream() {
+        return stream;
+    }
+    public void setStream(String stream) {
+        this.stream = stream;
+    }
+
+
 }

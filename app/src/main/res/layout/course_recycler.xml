@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <LinearLayout
+
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:id="@+id/myfirstlinear"
     >
     <include layout="@layout/toolbar_nbse"/>
 <LinearLayout
@@ -12,22 +14,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:gravity="center"
     android:paddingHorizontal="10dp"
     >
-    <TextView
-        android:id="@+id/course_title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="25sp"
-        android:textColor="@android:color/white"
-        android:textStyle="bold"
-        android:shadowDx="1"
-        android:shadowDy="-2"
-        android:shadowRadius="1"
-        android:shadowColor="@android:color/black"
-        android:paddingVertical="20dp"
-        />
+
 
 <TableLayout
     android:id="@+id/course_table"
@@ -60,11 +49,30 @@
             android:id="@+id/sub"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="3"
+            android:layout_weight="1.5"
             android:textSize="18sp"
             android:textColor="@android:color/white"
             android:textStyle="bold"
             android:text="@string/sub_name"
+            android:gravity="center_vertical|left"
+            />
+
+        <View
+            android:layout_width="1dip"
+            android:layout_marginHorizontal="15dp"
+            android:layout_height="40dp"
+            android:background="@android:color/darker_gray"
+            />
+
+        <TextView
+            android:id="@+id/stream"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:text="@string/stream_name"
             android:gravity="center_vertical|left"
             />
 

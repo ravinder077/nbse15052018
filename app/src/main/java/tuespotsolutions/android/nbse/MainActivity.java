@@ -10,7 +10,7 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 
-public class MainActivity extends AppCompatActivity implements RecyclerViewAdapter.ItemListener {
+public class  MainActivity extends AppCompatActivity implements RecyclerViewAdapter.ItemListener {
     RecyclerView recyclerView;
     ArrayList<DataModel> arrayList;
     ArrayList<Image_Model> imagelist;

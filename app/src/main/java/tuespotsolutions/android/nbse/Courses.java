@@ -7,6 +7,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 public class Courses extends AppCompatActivity {
 
@@ -14,6 +15,7 @@ public class Courses extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle b) {
+
         super.onCreate(b);
         setContentView(R.layout.courses);
 
@@ -21,15 +23,15 @@ public class Courses extends AppCompatActivity {
         s_sec = findViewById(R.id.s_secondary);
         dip = findViewById(R.id.diploma);
 
-
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar); //toolbar 1
+        TextView textView=findViewById(R.id.title);  //toolbar1
+        textView.setText("COURSE"); //TOOLBAR1
         sec.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(getApplicationContext(),Courses_Show.class);
 
-
                 i.putExtra("cname","sec");
-
 
 
                 startActivity(i);
@@ -53,15 +55,19 @@ public class Courses extends AppCompatActivity {
             }
         });
 
+        setSupportActionBar(toolbar);    //toolbar 1
 
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
-        // add back arrow to toolbar
+        // add back arrow to toolbar   //toolbar 1
         if (getSupportActionBar() != null) {
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
             getSupportActionBar().setDisplayShowHomeEnabled(true);
         }
+
+        //toolbar 1 ends
+
     }
+
+
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {

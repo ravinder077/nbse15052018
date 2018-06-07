@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_above="@id/resultsecond"
+    android:orientation="vertical"
+    android:id="@+id/resultfirst"
+    >
+    <include layout="@layout/toolbar_nbse"/>
+    <LinearLayout
+        android:id="@+id/outerlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingHorizontal="10dp"
+        >
+
+
+        <TableLayout
+            android:id="@+id/course_table"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TableRow
+                android:background="@android:color/holo_green_dark"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:weightSum="4"
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:text="@string/code"
+                    android:id="@+id/result_code"
+                    android:gravity="center_vertical"
+                    />
+                <View
+                    android:layout_width="1dip"
+                    android:layout_marginHorizontal="15dp"
+                    android:layout_height="40dp"
+                    android:background="@android:color/darker_gray"
+                    />
+                <TextView
+                    android:id="@+id/result_sub"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:textSize="18sp"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    android:text="@string/sub_name"
+                    android:gravity="center_vertical|left"
+                    />
+
+                <View
+                android:layout_width="1dip"
+                android:layout_marginHorizontal="15dp"
+                android:layout_height="40dp"
+                android:background="@android:color/darker_gray"
+                />
+
+                <TextView
+                    android:id="@+id/practical"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:textSize="18sp"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    android:text="@string/practical"
+                    android:gravity="center_vertical|left"
+                    />
+
+                <View
+                    android:layout_width="1dip"
+                    android:layout_marginHorizontal="15dp"
+                    android:layout_height="40dp"
+                    android:background="@android:color/darker_gray"
+                    />
+
+                <TextView
+                    android:id="@+id/theory"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.8"
+                    android:textSize="18sp"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    android:text="@string/theory"
+                    android:gravity="center_vertical|center_horizontal"
+                    />
+
+            </TableRow>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </android.support.v7.widget.RecyclerView>
+
+
+        </TableLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_alignParentBottom="true"
+      android:padding="10dp"
+      android:orientation="vertical"
+      android:id="@+id/resultsecond"
+      >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4"
+
+        >
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+
+
+                ></LinearLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:textSize="12dp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:text="@string/total"
+            android:gravity="center_vertical|right" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/t_marks"
+
+            android:textSize="12dp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:gravity="center_vertical|right" />
+
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:layout_alignParentBottom="true"
+        >
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+
+
+            ></LinearLayout>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:textSize="12dp"
+
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:text="@string/result"
+            android:gravity="center_vertical|right" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/result_pos"
+            android:textSize="12dp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:gravity="center_vertical|right" />
+
+
+
+
+
+    </LinearLayout>
+  </LinearLayout>
+</RelativeLayout>
