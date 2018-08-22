@@ -22,7 +22,7 @@ public class ResultMain extends AppCompatActivity {
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar); //toolbar 1
         TextView textView=findViewById(R.id.title);  //toolbar1
-        textView.setText("RESULT"); //TOOLBAR1
+        textView.setText(getString(R.string.result)); //TOOLBAR1
 
         submit_result.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -117,6 +117,7 @@ public class  MainActivity extends AppCompatActivity implements RecyclerViewAdap
         {
             // Intent intent = new Intent(getApplicationContext(),HorariosMain.class);
             //startActivity(intent);
+            startActivity(new Intent(getApplicationContext(),ContactUs.class));
             Toast.makeText(this, (String) getText(R.string.contact_us), Toast.LENGTH_SHORT).show();
         }
     }

@@ -86,14 +86,14 @@ public class Result_show extends AppCompatActivity {
         final String dofb = dob;
 
 
-        JsonObjectRequest fetchAllStores = new JsonObjectRequest(Request.Method.POST, "http://tuespotsolutions.com/nbse/app/result_main?roll="+roll+"&dob="+dofb, null, new Response.Listener<JSONObject>() {
+        JsonObjectRequest fetchAllStores = new JsonObjectRequest(Request.Method.POST, getString(R.string.hostname)+"result_main?roll="+roll+"&dob="+dofb, null, new Response.Listener<JSONObject>() {
 
             @Override
             public void onResponse(JSONObject response) {
 
                 System.err.println("inside onResponse ");
 
-                System.err.println("http://tuespotsolutions.com/nbse/app/result_main?roll="+roll+"&dob="+dofb);
+                System.err.println(getString(R.string.hostname)+"result_main?roll="+roll+"&dob="+dofb);
                
                 //Log.d("", "Data query chat : " + "http://tuespotsolutions.com/casa/fetchpagegroupchat.php?mobno="+mobileno+"&dataoffset="+dataoffset);
 

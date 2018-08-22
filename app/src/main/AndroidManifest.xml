@@ -24,6 +24,7 @@
         <activity android:name=".Courses_Show"/>
         <activity android:name=".ResultMain" android:parentActivityName=".MainActivity"/>
         <activity android:name=".Result_show"></activity>
+        <activity android:name=".ContactUs" android:parentActivityName=".MainActivity"></activity>
 
     </application>
 
