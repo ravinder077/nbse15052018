@@ -134,8 +134,8 @@ public class Courses_Show extends AppCompatActivity {
         } catch (UnsupportedEncodingException e) {
             e.printStackTrace();
         }
-
-        JsonObjectRequest fetchAllStores = new JsonObjectRequest(Request.Method.POST, "http://tuespotsolutions.com/nbse/app/dataform_secondary.php"+query, null, new Response.Listener<JSONObject>() {
+        //"dataform_secondary.php"+query,
+        JsonObjectRequest fetchAllStores = new JsonObjectRequest(Request.Method.POST, getString(R.string.hostname)+"dataform_secondary.php"+query, null, new Response.Listener<JSONObject>() {
 
 
 
@@ -146,7 +146,7 @@ public class Courses_Show extends AppCompatActivity {
 
                 System.err.println("inside onResponse ");
 
-                System.err.println("http://tuespotsolutions.com/nbse/app/dataform_secondary.php"+query);
+                System.err.println(getString(R.string.hostname)+"dataform_secondary.php"+query);
                 //Log.d("", "Data query chat : " + "http://tuespotsolutions.com/casa/fetchpagegroupchat.php?mobno="+mobileno+"&dataoffset="+dataoffset);
 
                 //Log.d("", "Fetch Stores chat: " + response);

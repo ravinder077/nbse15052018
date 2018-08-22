@@ -23,5 +23,6 @@
     <string name="theory">T</string>
     <string name="total">Total marks</string>
     <string name="abc">abc</string>
+    <string name="hostname">http://tuespotsolutions.com/nbseapp/</string>
 
 </resources>
